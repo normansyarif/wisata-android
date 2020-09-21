@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:visibility="gone"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:id="@+id/error_layout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_error" />
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tidak ada koneksi Internet" />
+
+    <TextView
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:onClick="reloadWebview"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="50dp"
+        android:textAlignment="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="COBA LAGI" />
+
+</LinearLayout>
